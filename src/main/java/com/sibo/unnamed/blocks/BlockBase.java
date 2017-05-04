@@ -19,6 +19,7 @@ public class BlockBase extends Block implements IItemModelProvider{
 		
 		setUnlocalizedName(name);
 		setRegistryName(name);
+		setCreativeTab(Unnamed.creativeTab);
 	}
 	
 	public void registerItemModel(Item itemBlock){

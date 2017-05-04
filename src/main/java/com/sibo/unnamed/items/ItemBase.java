@@ -5,7 +5,7 @@ import com.sibo.unnamed.common.Unnamed;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class ItemBase extends Item{
+public class ItemBase extends Item implements IItemModelProvider{
 
 	protected String name;
 	
@@ -13,10 +13,11 @@ public class ItemBase extends Item{
 		this.name = name;
 		setUnlocalizedName(name);
 		setRegistryName(name);		
+		setCreativeTab(Unnamed.creativeTab);
 	}
 	
-	public void registerItemModel(){
-		Unnamed.proxy.registerItemRenderer(this, 0, name);
+	public void registerItemModel(Item item){
+		Unnamed.proxy.registerItemRenderer(item, 0, name);
 	}
 	
 	@Override

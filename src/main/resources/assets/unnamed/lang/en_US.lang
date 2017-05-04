@@ -1,5 +1,15 @@
 # Items
 item.ingotCopper.name=Copper Ingot
 
+#Seeds
+item.seedCorn.name=Corn Seed
+
+#Foods
+item.foodCorn.name=Corn
+
 # Blocks
 tile.oreCopper.name=Copper Ore
+tile.pedistal.name=Pedestal
+
+#Misc
+itemGroup.unnamed=Unnamed Mod
