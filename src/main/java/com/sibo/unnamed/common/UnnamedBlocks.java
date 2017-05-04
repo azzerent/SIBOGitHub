@@ -1,7 +1,9 @@
 package com.sibo.unnamed.common;
 
+import com.sibo.unnamed.blocks.BlockCounter;
 import com.sibo.unnamed.blocks.BlockPedestal;
 import com.sibo.unnamed.blocks.OreBase;
+import com.sibo.unnamed.blocks.TileEntityBlock;
 import com.sibo.unnamed.blocks.crops.BlockCropCorn;
 import com.sibo.unnamed.items.IItemModelProvider;
 import com.sibo.unnamed.items.IItemOreDict;
@@ -15,11 +17,13 @@ public class UnnamedBlocks {
 	public static OreBase oreCopper;
 	public static BlockCropCorn cropCorn;
 	public static BlockPedestal pedestal;
+	public static BlockCounter counter;
 	
 	public static void init(){
 		oreCopper = register(new OreBase("oreCopper", "oreCopper"));
 		cropCorn = register(new BlockCropCorn(), null);
 		pedestal = register(new BlockPedestal());
+		counter = register(new BlockCounter());
 	}
 	
 	private static <T extends Block> T register(T block, ItemBlock itemBlock){
@@ -37,6 +41,10 @@ public class UnnamedBlocks {
 			
 			if(itemBlock instanceof IItemOreDict){
 				((IItemOreDict)itemBlock).initOreDict();
+			}
+			
+			if(block instanceof TileEntityBlock){
+				GameRegistry.registerTileEntity(((TileEntityBlock<?>)block).getTileEntityClass(), block.getRegistryName().toString());
 			}
 		}
 		

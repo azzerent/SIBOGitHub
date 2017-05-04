@@ -1,0 +1,8 @@
+Vad är interfaces och vad är de bra för
+Vad är en TileEntity?
+vad betyder super() egentligen?
+vad är parameterized?
+vad är abstracta klasser
+
+
+NBT compounds - http://wiki.vg/NBT
