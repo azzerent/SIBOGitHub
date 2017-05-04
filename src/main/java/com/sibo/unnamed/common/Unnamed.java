@@ -24,6 +24,7 @@ public class Unnamed {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println(name + " is loading!");
+		UnnmedBlocks.init();
 		UnnamedItems.init();
 	}
 
