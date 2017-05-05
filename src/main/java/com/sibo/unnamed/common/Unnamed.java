@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Unnamed.modId, name = Unnamed.name, version = Unnamed.version, acceptedMinecraftVersions = "[1.10.2]")
@@ -39,6 +40,7 @@ public class Unnamed {
 		UnnamedBlocks.init();
 		UnnamedItems.init();
 		GameRegistry.registerWorldGenerator(new UnnamedWorldGen(), 3);
+		NetworkRegistry.INSTANCE.registerGuiHandler(this, new UnnamedGuiHandler());		
 	}
 
 	@Mod.EventHandler
@@ -48,6 +50,6 @@ public class Unnamed {
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-
+		
 	}
 }

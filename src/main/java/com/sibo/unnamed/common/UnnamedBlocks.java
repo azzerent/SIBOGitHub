@@ -1,10 +1,10 @@
 package com.sibo.unnamed.common;
 
-import com.sibo.unnamed.blocks.BlockCounter;
-import com.sibo.unnamed.blocks.BlockPedestal;
 import com.sibo.unnamed.blocks.OreBase;
 import com.sibo.unnamed.blocks.TileEntityBlock;
+import com.sibo.unnamed.blocks.counter.BlockCounter;
 import com.sibo.unnamed.blocks.crops.BlockCropCorn;
+import com.sibo.unnamed.blocks.pedestal.BlockPedestal;
 import com.sibo.unnamed.items.IItemModelProvider;
 import com.sibo.unnamed.items.IItemOreDict;
 

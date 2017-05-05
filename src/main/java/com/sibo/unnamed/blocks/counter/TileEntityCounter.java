@@ -1,4 +1,4 @@
-package com.sibo.unnamed.blocks;
+package com.sibo.unnamed.blocks.counter;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;

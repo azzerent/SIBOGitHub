@@ -1,8 +1,34 @@
-Vad är interfaces och vad är de bra för
+﻿Vad är interfaces och vad är de bra för - http://stackoverflow.com/questions/1321122/what-is-an-interface-in-java
 Vad är en TileEntity?
 vad betyder super() egentligen?
 vad är parameterized?
 vad är abstracta klasser
+Vad är IBlockStates?
 
 
 NBT compounds - http://wiki.vg/NBT
+Capabilities - http://mcforge.readthedocs.io/en/latest/datastorage/capabilities/
+
+
+
+
+
+
+
+
+
+
+Capabilities
+return .... || super
+ - *: We delegate back to the super method because Forge provides an AttachCapabilitiesEvent which allows other mods to add capabilites to tile entities and other objects that they don’t own.
+
+
+
+Misc
+return count == isHere ? getHereCount(index) : getAwayCount(index);
+
+int count;
+if (count == isHere)
+    return getHereCount(index);
+else
+    return getAwayCount(index);

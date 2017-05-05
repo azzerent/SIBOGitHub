@@ -1,4 +1,4 @@
-package com.sibo.unnamed.blocks;
+package com.sibo.unnamed.blocks.counter;
 
 import javax.annotation.Nullable;
 
