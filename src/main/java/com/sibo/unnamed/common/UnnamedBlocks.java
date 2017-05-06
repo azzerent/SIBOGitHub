@@ -37,15 +37,13 @@ public class UnnamedBlocks {
 			
 			if(block instanceof IItemOreDict){
 				((IItemOreDict)block).initOreDict();
-			}
-			
-			if(itemBlock instanceof IItemOreDict){
+			}else if(itemBlock instanceof IItemOreDict){
 				((IItemOreDict)itemBlock).initOreDict();
 			}
-			
-			if(block instanceof TileEntityBlock){
-				GameRegistry.registerTileEntity(((TileEntityBlock<?>)block).getTileEntityClass(), block.getRegistryName().toString());
-			}
+		}
+		
+		if(block instanceof TileEntityBlock){
+			GameRegistry.registerTileEntity(((TileEntityBlock<?>)block).getTileEntityClass(), block.getRegistryName().toString());
 		}
 		
 		return block;

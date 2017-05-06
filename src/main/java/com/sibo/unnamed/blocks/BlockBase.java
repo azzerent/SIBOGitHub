@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 
 public class BlockBase extends Block implements IItemModelProvider{
 
-	private String name;
+	protected String name;
 	
 	public BlockBase(Material material, String name){
 		super(material);
@@ -22,8 +22,8 @@ public class BlockBase extends Block implements IItemModelProvider{
 		setCreativeTab(Unnamed.creativeTab);
 	}
 	
-	public void registerItemModel(Item itemBlock){
-		Unnamed.proxy.registerItemRenderer(itemBlock, 0, name);
+	public void registerItemModel(Item item){
+		Unnamed.proxy.registerItemRenderer(item, 0, name);
 	}
 	
 	@Override

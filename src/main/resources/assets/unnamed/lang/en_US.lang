@@ -9,7 +9,7 @@ item.foodCorn.name=Corn
 
 # Blocks
 tile.oreCopper.name=Copper Ore
-tile.pedistal.name=Pedestal
+tile.pedestal.name=Pedestal
 
 #Misc
 itemGroup.unnamed=Unnamed Mod

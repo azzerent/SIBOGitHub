@@ -32,3 +32,14 @@ if (count == isHere)
     return getHereCount(index);
 else
     return getAwayCount(index);
+
+
+
+
+EnergyMods
+https://git.thebmw.com/minecraft/thebmwtech/tree/62d142c10d493b742b8b02098f4287e5fe77cc45    -  Best implementation I think
+
+https://github.com/cpw/simplepower
+https://github.com/elytra/DarkMachinations
+https://github.com/flammpfeil/SlashBlade
+https://github.com/raoulvdberge/rangedpumps
